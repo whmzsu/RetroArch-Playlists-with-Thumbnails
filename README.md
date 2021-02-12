@@ -30,7 +30,6 @@ roms/*.zip     (wil be ignored)
 roms/Fight/*.zip     (will create a playlist named "Fight")
 roms/Fight/Versus/*.zip   (will create a playlist names "Fight - Versus")
 ```
-Take a look at the file 'screenshot.jpg' to see how MAME catgen.ini genres are used to create playlists.
 
 6. Check if the thumbnails are OK. When an image with the same name as the *.zip is not found, a thumbnail file with zero bytes is still generated, for easy way to track missing images and know the correct name the thumbnail must have.
 
