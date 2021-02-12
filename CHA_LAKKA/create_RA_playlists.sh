@@ -81,6 +81,8 @@ while read -r ZIPFILE; do
     echo "Game \"$ROMNAME\" not found."
   fi
 done <<EOF1
-$(find "$RUNNINGFROM/roms" -name '*.zip' -mindepth 1 -type f -print 2> /dev/null | sort -f)
+$(find "$RUNNINGFROM/roms" -name '*.zip' -mindepth 2 -type f -print 2> /dev/null | sort -f)
 EOF1
+
+echo -e "\nDone."
 
