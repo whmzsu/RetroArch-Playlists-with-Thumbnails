@@ -19,7 +19,7 @@ mkdir -p "$RUNNINGFROM/playlists"
 PREVIOUSPLAYLISTNAME=""
 while read -r ZIPFILE; do
   ROMNAME=${ZIPFILE##*/}; ROMNAME=${ROMNAME%.zip}
-  GAMENAME="$(grep -m 1 "$ROMNAME " "$RUNNINGFROM/games_names.txt")"
+  GAMENAME="$(grep -m 1 "^$ROMNAME " "$RUNNINGFROM/games_names.txt")"
   if [ -n "$GAMENAME" ]
   then
     # Game name found
